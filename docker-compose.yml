@@ -3,7 +3,7 @@ services:
   airflow:
     build:
       context: .
-    image: ap-airflow:latest
+    image: airflow-minimal
     volumes:
       - "./dags:/root/airflow/dags"
     ports:
