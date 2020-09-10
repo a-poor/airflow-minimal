@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  airflow:
+    build:
+      context: .
+    image: ap-airflow:latest
+    volumes:
+      - "./dags:/root/airflow/dags"
+    ports:
+      - "8080:8080"
